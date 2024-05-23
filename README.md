@@ -1,4 +1,4 @@
-# Proyecto Full-Stack: React y Laravel
+# Proyecto Full-Stack: Prueba Tecnica Hotelinking
 
 Este repositorio contiene dos proyectos: un frontend en React y un backend en Laravel con una base de datos MySQL. A continuación se detallan los pasos para configurar y ejecutar ambos proyectos localmente.
 
