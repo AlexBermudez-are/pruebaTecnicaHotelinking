@@ -1,86 +1,82 @@
-# Proyecto Full-Stack: Prueba Tecnica Hotelinking
+Proyecto Full-Stack: Prueba Tecnica Hotelinking
 
-Este repositorio contiene dos proyectos: un frontend en React y un backend en Laravel con una base de datos MySQL. A continuación se detallan los pasos para configurar y ejecutar ambos proyectos localmente.
+Este repositorio contiene dos proyectos: un frontend en React y un backend en Laravel con una base de datos MySQL. A
 
-## Tecnologías Utilizadas
+continuación se detallan los pasos para configurar y ejecutar ambos proyectos localmente.
 
-- **Frontend**: JavaScript, React, Bootstrap
-- **Backend**: PHP, Laravel
-- **Base de Datos**: MySQL
+Tecnologías Utilizadas
 
-## Requisitos Previos
+- Frontend: JavaScript, React, Bootstrap
+- Backend: PHP, Laravel
+- Base de Datos: MySQL
+
+Requisitos Previos
 
 Asegúrate de tener instalados los siguientes requisitos en tu máquina:
 
-- [Node.js](https://nodejs.org/) y npm
-- [PHP](https://www.php.net/)
-- [Composer](https://getcomposer.org/)
-- [MySQL](https://www.mysql.com/)
+- Node.js y npm
+- PHP
+- Composer
+- MySQL
 
-## Configuración del Frontend (React)
+Configuración del Frontend (React)
 
-1. **Clonar el repositorio**
+1. Clonar el repositorio
 
-   ```bash
-   git clone https://github.com/tu-usuario/combined-projects.git
-   cd combined-projects
+git clone https://github.com/tu-usuario/combined-projects.git
 
-2. **Instalar dependencias**
+cd combined-projects
 
-   Navega al directorio front y ejecuta npm para instalar las dependencias:
-   cd front
-   npm install
+1. Instalar dependencias
 
- 3. **Ejecutar el servidor de desarrollo**
+Navega al directorio front y ejecuta npm para instalar las dependencias: cd front npm install
 
-   Después de instalar las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo:
-   npm run start
+1. Ejecutar el servidor de desarrollo
 
-   El servidor de desarrollo se iniciará en http://localhost:3000.
+Después de instalar las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo: npm run start
 
-## Configuración del Backend (Laravel)
-  
-   1. **Configurar la base de datos MySQL**
-   Asegúrate de tener MySQL instalado y en ejecución. Luego, crea una base de datos para el proyecto:
+El servidor de desarrollo se iniciará en http://localhost:3000.
 
-  **CREATE DATABASE pruebaTecnicaHotelinking;**
-  
-  2. **Configurar el archivo .env**
+Configuración del Backend (Laravel)
 
-  Navega al directorio api y copia el archivo de entorno de ejemplo:
+1. Configurar la base de datos MySQL Asegúrate de tener MySQL instalado y en ejecución. Luego, crea una base
 
-  cd ../api
-  cp .env.example .env
-  
-  Luego, edita el archivo .env y configura los detalles de la base de datos:
+de datos para el proyecto:
 
-  DB_CONNECTION=mysql
-  DB_HOST=127.0.0.1
-  DB_PORT=3306
-  DB_DATABASE=nombre_de_tu_base_de_datos
-  DB_USERNAME=tu_usuario
-  DB_PASSWORD=tu_contraseña
+CREATE DATABASE pruebaTecnicaHotelinking;
 
-  4. **Instalar dependencias de Laravel**
+1. Configurar el archivo .env
 
-  Ejecuta Composer para instalar las dependencias:
+Navega al directorio api y copia el archivo de entorno de ejemplo:
 
-  composer install
+cd ../api cp .env.example .env
 
-  5. **Generar la clave de aplicación**
+Luego, edita el archivo .env y configura los detalles de la base de datos:
 
-  php artisan key:generate
+DB\_CONNECTION=mysql DB\_HOST=127.0.0.1 DB\_PORT=3306 DB\_DATABASE=nombre\_de\_tu\_base\_de\_datos
 
-  6. **Migrar y sembrar la base de datos**
+DB\_USERNAME=tu\_usuario DB\_PASSWORD=tu\_contraseña
 
-  Ejecuta las migraciones y los seedeers para configurar la base de datos:
+4\. Instalar dependencias de Laravel
 
-  php artisan migrate --seed
+Ejecuta Composer para instalar las dependencias:
 
-  7. ** Ejecutar el servidor de desarrollo**
+composer install
 
-  Inicia el servidor de desarrollo de Laravel:
+5\. Generar la clave de aplicación
 
-  php artisan serve
+php artisan key:generate
+
+6\. Migrar y sembrar la base de datos
+
+Ejecuta las migraciones y los seedeers para configurar la base de datos:
+
+php artisan migrate --seed
+
+7\. \*\* Ejecutar el servidor de desarrollo\*\*
+
+Inicia el servidor de desarrollo de Laravel:
+
+php artisan serve
 
 El servidor de desarrollo se iniciará en http://localhost:8000.
