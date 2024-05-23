@@ -1,6 +1,16 @@
 # Proyecto Full-Stack: Prueba Tecnica Hotelinking
 
-Este repositorio contiene dos proyectos: un frontend en React y un backend en Laravel con una base de datos MySQL. A continuación se detallan los pasos para configurar y ejecutar ambos proyectos localmente.
+Este repositorio contiene dos proyectos: un frontend en React y un backend en Laravel con una base de datos MySQL.
+
+### El objetivo del proyecto ###
+
+Una pequeña plataforma donde un usuario puede acceder, ve una lista de ofertas, y puede,
+haciendo click sobre alguna de ellas, generar un código único que se guardará en la base
+de datos y después puede revisar que códigos promocionales tiene en una página de
+detalle. En la página de detalle, el usuario puede pulsar sobre un botón canjear código que
+marcará como canjeado el código de la BBDD y confirmará al usuario que se ha canjeado.
+
+A continuación se detallan los pasos para configurar y ejecutar ambos proyectos localmente.
 
 ## Tecnologías Utilizadas
 
