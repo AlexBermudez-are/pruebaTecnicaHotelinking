@@ -2,7 +2,7 @@
 
 Este repositorio contiene dos proyectos: un frontend en React y un backend en Laravel con una base de datos MySQL.
 
-### El objetivo del proyecto ###
+## El objetivo del proyecto
 
 Una pequeña plataforma donde un usuario puede acceder, ve una lista de ofertas, y puede,
 haciendo click sobre alguna de ellas, generar un código único que se guardará en la base
@@ -35,62 +35,64 @@ Asegúrate de tener instalados los siguientes requisitos en tu máquina:
    git clone https://github.com/tu-usuario/combined-projects.git
    cd combined-projects
 
+   ```
+
 2. **Instalar dependencias**
 
    Navega al directorio front y ejecuta npm para instalar las dependencias:
    cd front
    npm install
 
- 3. **Ejecutar el servidor de desarrollo**
+3. **Ejecutar el servidor de desarrollo**
 
-    Después de instalar las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo:
-    npm run start
+   Después de instalar las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo:
+   npm run start
 
-    El servidor de desarrollo se iniciará en http://localhost:3000.
+   El servidor de desarrollo se iniciará en http://localhost:3000.
 
 ## Configuración del Backend (Laravel)
-  
-   1. **Configurar la base de datos MySQL**
+
+1.  **Configurar la base de datos MySQL**
     Asegúrate de tener MySQL instalado y en ejecución. Luego, crea una base de datos para el proyecto:
 
-   **CREATE DATABASE pruebaTecnicaHotelinking;**
-  
-  2. **Configurar el archivo .env**
+**CREATE DATABASE pruebaTecnicaHotelinking;**
 
-   Navega al directorio api y copia el archivo de entorno de ejemplo:
+2. **Configurar el archivo .env**
 
-   cd ../api
-   cp .env.example .env
-  
-   Luego, edita el archivo .env y configura los detalles de la base de datos:
+Navega al directorio api y copia el archivo de entorno de ejemplo:
 
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=nombre_de_tu_base_de_datos
-   DB_USERNAME=tu_usuario
-   DB_PASSWORD=tu_contraseña
+cd ../api
+cp .env.example .env
 
-  4. **Instalar dependencias de Laravel**
+Luego, edita el archivo .env y configura los detalles de la base de datos:
 
-   Ejecuta Composer para instalar las dependencias:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nombre_de_tu_base_de_datos
+DB_USERNAME=tu_usuario
+DB_PASSWORD=tu_contraseña
 
-   composer install
+4. **Instalar dependencias de Laravel**
 
-  5. **Generar la clave de aplicación**
+Ejecuta Composer para instalar las dependencias:
 
-   php artisan key:generate
+composer install
 
-  6. **Migrar y sembrar la base de datos**
+5. **Generar la clave de aplicación**
 
-   Ejecuta las migraciones y los seedeers para configurar la base de datos:
+php artisan key:generate
 
-   php artisan migrate --seed
+6. **Migrar y sembrar la base de datos**
 
-  7. ** Ejecutar el servidor de desarrollo**
+Ejecuta las migraciones y los seedeers para configurar la base de datos:
 
-   Inicia el servidor de desarrollo de Laravel:
+php artisan migrate --seed
 
-   php artisan serve
+7. ** Ejecutar el servidor de desarrollo**
+
+Inicia el servidor de desarrollo de Laravel:
+
+php artisan serve
 
 El servidor de desarrollo se iniciará en http://localhost:8000.
