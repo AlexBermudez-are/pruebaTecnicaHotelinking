@@ -1,4 +1,4 @@
-# Proyecto Full-Stack: React y Laravel
+# Proyecto Full-Stack: Prueba Tecnica Hotelinking
 
 Este repositorio contiene dos proyectos: un frontend en React y un backend en Laravel con una base de datos MySQL. A continuación se detallan los pasos para configurar y ejecutar ambos proyectos localmente.
 
@@ -33,15 +33,15 @@ Asegúrate de tener instalados los siguientes requisitos en tu máquina:
 
  3. **Ejecutar el servidor de desarrollo**
 
-    Después de instalar las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo:
-    npm run start
+   Después de instalar las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo:
+   npm run start
 
-    El servidor de desarrollo se iniciará en http://localhost:3000.
+   El servidor de desarrollo se iniciará en http://localhost:3000.
 
 ## Configuración del Backend (Laravel)
   
-  1. **Configurar la base de datos MySQL**
-  Asegúrate de tener MySQL instalado y en ejecución. Luego, crea una base de datos para el proyecto:
+   1. **Configurar la base de datos MySQL**
+   Asegúrate de tener MySQL instalado y en ejecución. Luego, crea una base de datos para el proyecto:
 
   **CREATE DATABASE pruebaTecnicaHotelinking;**
   
