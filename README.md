@@ -40,47 +40,47 @@ Asegúrate de tener instalados los siguientes requisitos en tu máquina:
 
 ## Configuración del Backend (Laravel)
   
-  1. **Configurar la base de datos MySQL**
-  Asegúrate de tener MySQL instalado y en ejecución. Luego, crea una base de datos para el proyecto:
+   1. **Configurar la base de datos MySQL**
+    Asegúrate de tener MySQL instalado y en ejecución. Luego, crea una base de datos para el proyecto:
 
-  **CREATE DATABASE pruebaTecnicaHotelinking;**
+   **CREATE DATABASE pruebaTecnicaHotelinking;**
   
   2. **Configurar el archivo .env**
 
-  Navega al directorio api y copia el archivo de entorno de ejemplo:
+   Navega al directorio api y copia el archivo de entorno de ejemplo:
 
-  cd ../api
-  cp .env.example .env
+   cd ../api
+   cp .env.example .env
   
-  Luego, edita el archivo .env y configura los detalles de la base de datos:
+   Luego, edita el archivo .env y configura los detalles de la base de datos:
 
-  DB_CONNECTION=mysql
-  DB_HOST=127.0.0.1
-  DB_PORT=3306
-  DB_DATABASE=nombre_de_tu_base_de_datos
-  DB_USERNAME=tu_usuario
-  DB_PASSWORD=tu_contraseña
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=nombre_de_tu_base_de_datos
+   DB_USERNAME=tu_usuario
+   DB_PASSWORD=tu_contraseña
 
   4. **Instalar dependencias de Laravel**
 
-  Ejecuta Composer para instalar las dependencias:
+   Ejecuta Composer para instalar las dependencias:
 
-  composer install
+   composer install
 
   5. **Generar la clave de aplicación**
 
-  php artisan key:generate
+   php artisan key:generate
 
   6. **Migrar y sembrar la base de datos**
 
-  Ejecuta las migraciones y los seedeers para configurar la base de datos:
+   Ejecuta las migraciones y los seedeers para configurar la base de datos:
 
-  php artisan migrate --seed
+   php artisan migrate --seed
 
   7. ** Ejecutar el servidor de desarrollo**
 
-  Inicia el servidor de desarrollo de Laravel:
+   Inicia el servidor de desarrollo de Laravel:
 
-  php artisan serve
+   php artisan serve
 
 El servidor de desarrollo se iniciará en http://localhost:8000.
