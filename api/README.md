@@ -7,60 +7,78 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Proyecto Full-Stack: Prueba Tecnica Hotelinking
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Este repositorio contiene un proyecto: Un Back-end en PHP y Laravel, con una base de datos hecha con MySQL.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## El objetivo del proyecto
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Una pequeña plataforma donde un usuario puede acceder, ve una lista de ofertas, y puede,
+haciendo click sobre alguna de ellas, generar un código único que se guardará en la base
+de datos y después puede revisar que códigos promocionales tiene en una página de
+detalle. En la página de detalle, el usuario puede pulsar sobre un botón canjear código que
+marcará como canjeado el código de la BBDD y confirmará al usuario que se ha canjeado.
 
-## Learning Laravel
+A continuación se detallan los pasos para configurar y ejecutar el proyecto localmente.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tecnologías Utilizadas
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Backend**: PHP, Laravel
+- **Base de Datos**: MySQL
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Requisitos Previos
 
-## Laravel Sponsors
+Asegúrate de tener instalados los siguientes requisitos en tu máquina:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- [PHP](https://www.php.net/)
+- [Composer](https://getcomposer.org/)
+- [MySQL](https://www.mysql.com/)
 
-### Premium Partners
+## Configuración del Backend (Laravel)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## 1. Configurar la base de datos MySQL
+   
+   Asegúrate de tener MySQL instalado y en ejecución. Luego, crea una base de datos para el proyecto:
 
-## Contributing
+**CREATE DATABASE pruebaTecnicaHotelinking;**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 2. Configurar el archivo .env
 
-## Code of Conduct
+Navega al directorio api y copia el archivo de entorno de ejemplo:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+cd ../api
+cp .env.example .env
 
-## Security Vulnerabilities
+Luego, edita el archivo .env y configura los detalles de la base de datos:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=nombre_de_tu_base_de_datos
+DB_USERNAME=tu_usuario
+DB_PASSWORD=tu_contraseña
 
-## License
+## 4. Instalar dependencias de Laravel
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Ejecuta Composer para instalar las dependencias:
+
+composer install
+
+## 5.Generar la clave de aplicación**
+
+php artisan key:generate
+
+## 6. Migrar y sembrar la base de datos**
+
+Ejecuta las migraciones y los seedeers para configurar la base de datos:
+
+php artisan migrate --seed
+
+## 7. Ejecutar el servidor de desarrollo**
+
+Inicia el servidor de desarrollo de Laravel:
+
+php artisan serve
+
+El servidor de desarrollo se iniciará en http://localhost:8000.
+
