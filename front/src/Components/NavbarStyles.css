@@ -1,0 +1,52 @@
+.section-Sessions-In-Out {
+  display: flex;
+}
+
+.me-auto {
+  width: 15%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-To-Pages {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.links-To-Pages:hover {
+  color: #b5b5b5;
+}
+
+.vector-Logout,
+.vector-login {
+  cursor: pointer;
+}
+
+.vector-Logout svg,
+.vector-login svg {
+  cursor: pointer;
+  width: 4vw;
+  height: 4vw;
+}
+
+@media (max-width: 768px) {
+  .me-auto {
+    width: 20%;
+  }
+  .container-Navbar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .me-auto {
+    width: 35%;
+  }
+
+  .vector-Logout svg,
+  .vector-login svg {
+    width: 8vw;
+    height: 8vw;
+  }
+}

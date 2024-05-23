@@ -1,0 +1,30 @@
+.container-Offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 95%;
+    margin: auto;
+    padding-top: 5%;
+    margin-bottom: 10%; 
+    gap: 3%;
+}
+
+@media(max-width: 1024px){
+}
+
+@media(max-width: 768px){
+    .container-Offers {
+        display: grid;
+        width: 95%;
+        margin: auto;
+        padding-top: 5%;
+        gap: 0;
+    }
+}
+
+@media (max-width: 590px) {
+    .container-Offers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 15%;
+    }
+}

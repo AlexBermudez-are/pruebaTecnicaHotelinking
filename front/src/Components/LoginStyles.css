@@ -1,0 +1,336 @@
+.input-Usuario-Padre {
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 87, 87, 0.472);
+    position: fixed;
+}
+
+.inicia-Sesion-Home {
+    font-weight: 100;
+    font-size: 2rem;
+    margin: 0;
+    padding: .5rem;
+}
+
+.input-Usuario-Contenedor {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 35%;
+    height: 60%;
+    margin: 10% auto;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.input-Usuario-Contenedor.active {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30%;
+    height: 65%;
+    margin: 10% auto;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+
+.btn-x-Close {
+    margin: 0px;
+    margin-top: -70%;
+}
+
+
+.titulo-Sesion {
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 3%;
+    padding-right: 5%;
+    background-color: #212529;
+    font-size: 16px;
+    color: white;
+}
+
+.btn-Usuario-X {
+    border: none;
+    background-color: #212529;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    height: 58%;
+    margin-top: 2%;
+    outline: none;
+}
+
+.inputs-Sesion {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-Sesion label {
+    width: 90%;
+    margin-left: 5%;
+    z-index: 999;
+}
+
+.inputs-Sesion p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding-left: 5%;
+    padding-top: 5%;
+    margin: 10px 0;
+}
+
+.input-Email, .input-Contraseña {
+    width: 88%;
+    margin-left: 5%;
+    font-size: 1.3rem;
+}
+
+.sesion-Fallida-E {
+    margin-top: -8%;
+    visibility: hidden;
+    width: 90%;
+    color: red;
+    font-size: 1.2rem;
+    padding-left: 10%;
+    font-weight: bold;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.sesion-Fallida-E.active {
+    visibility: visible;
+    width: 90%;
+    color: red;
+    font-size: 1.2rem;
+    padding-left: 10%;
+    padding-top: 10%;
+    font-weight: bold;
+    opacity: 1;
+    transition: all .5s ease;
+    z-index: 998;
+}
+
+.input-Email, .input-Contraseña:focus {
+    outline: none;
+    color: #495057;
+}
+
+.ingresar-Login-Usuario {
+    margin-top: 7%;
+    width: 25%;
+    font-size: 1.3rem;
+    background-color: red;
+    border: none;
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 9.5%;
+    cursor: pointer;
+}
+
+.extra-Login {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
+.btn-Extra {
+    color: rgb(0, 89, 255);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.spinner-Login {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    z-index: 999;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition:all .1s ease;
+}
+.spinner-Login.active{
+    opacity: 1;
+    visibility: visible;
+    transition:all .1s ease;
+}
+
+@media(max-width:1024px) {
+    .input-Usuario-Contenedor {
+        width: 50%;
+        height: 62%;
+    }
+
+    .input-Usuario-Contenedor.active {
+        width: 50%;
+        height: 68%;
+    }
+
+    .ingresar-Login-Usuario {
+        margin: 0 auto;
+        margin-left: 9.5%;
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+
+    .extra-Login {
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .input-Email {
+        margin-top: 1%;
+    }
+
+    .inputs-Sesion p {
+        padding-top: 2%;
+    }
+}
+
+@media(max-width:768px) {
+
+    .input-Usuario-Contenedor {
+        height: 67%;
+        width: 58%;
+    }
+
+    .input-Usuario-Contenedor.active {
+        width: 58%;
+        height: 75%;
+    }
+
+    .input-Email, .input-Contraseña {
+        margin-top: 2%;
+        margin-left: 4%;
+    }
+
+    .ingresar-Login-Usuario {
+        margin-left: 9%;
+    }
+
+    .sesion-Fallida-E.active{
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 5%;
+        padding-left: 9%;
+    }
+}
+
+@media(max-width:425px) {
+    .input-Usuario-Contenedor {
+        margin: 30% auto;
+        width: 80%;
+        height: 65vh;
+    }
+
+    .input-Usuario-Contenedor.active {
+        margin: 30% auto;
+        width: 80%;
+    }
+
+    .inputs-Sesion label {
+        padding-bottom: 0%;
+        margin-left: 4%;
+    }
+
+    .sesion-Fallida-E.active{
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+    }
+
+    .ingresar-Login-Usuario {
+        width: 30%;
+        margin: 0 auto;
+        margin-left: 9%;
+    }
+
+    .btn-x-Close {
+        margin-top: -50%;
+    }
+
+    .input-Email, .input-Contraseña {
+        margin-left: 6%;
+        margin-top: 1%;
+    }
+
+    .btn-Extra {
+        width: 50%;
+    }
+
+    .extra-Login {
+        width: 100%;
+        margin-top: 5%;
+    }
+}
+
+@media(max-width:375px) {
+
+    .ingresar-Login-Usuario {
+        width: 33%;
+        margin-top: 7%;
+    }
+
+    .input-Email, .input-Contraseña {
+        margin-left: 5%;
+    }
+
+    .sesion-Fallida-E {
+        margin-top: -15%;
+        font-size: 1rem;
+        padding-left: 8%;
+    }
+
+    .sesion-Fallida-E.active {
+        font-size: 1rem;
+        padding-left: 8%;
+        padding-top: 3%;
+        margin: 0;
+    }
+}
+
+@media(max-width:320px) {
+    .input-Usuario-Contenedor {
+        width: 90%;
+    }
+
+    .input-Usuario-Contenedor.active {
+        width: 90%;
+    }
+
+    .ingresar-Login-Usuario {
+        width: 38%;
+    }
+
+    .inicia-Sesion-Home {
+        font-size: 1.6rem;
+    }
+
+    .input-Email, .input-Contraseña {
+        margin-top: 2%;
+    }
+
+    .btn-Extra {
+        width: auto;
+    }
+
+    .extra-Login{
+        width: 95%;
+    }
+}

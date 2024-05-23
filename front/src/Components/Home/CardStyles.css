@@ -1,0 +1,89 @@
+.card-Image {
+    height: 15vw;
+    width: 100%;
+}
+
+.card-Container {
+    height: 34vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.focus-Card{
+    width: 18rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.focus-Card:hover{
+    scale: 1.1;
+    transition: all .3s ease;
+}
+
+@media(max-width: 1200px){
+    .card-Container {
+        height: 42vw;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-Container {
+        height: 50vw;
+    }
+
+    .focus-Card {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 590px) {
+    .focus-Card {
+        width: 40vw;
+    }
+    .card-Container {
+        height: 65vw;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .body-Card-Container p {
+        margin: 0;
+        font-size: 13px;
+        margin-bottom: 5%;
+    }
+
+    .btn-Get-Coupon {
+        height: 10vw;
+        font-size: 15px !important;
+    }
+
+    .card-Container {
+        height: 90vw;
+        margin-bottom: 15%;
+    }
+
+    .focus-Card {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .body-Card-Container p {
+        margin: 0;
+        font-size: 12px;
+        margin-bottom: 0%;
+    }
+
+    .card-Container {
+        height: 95vw;
+    }
+
+    .btn-Get-Coupon {
+        margin-top: 6%;
+        height: 10vw;
+        font-size: 15px !important;
+    }
+}

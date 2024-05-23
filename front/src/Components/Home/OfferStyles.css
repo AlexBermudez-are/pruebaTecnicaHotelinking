@@ -1,0 +1,7 @@
+.container-Offers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+    margin: auto;
+    padding-top: 5%;
+}

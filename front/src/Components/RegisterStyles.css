@@ -1,0 +1,294 @@
+.input-C-Usuario-Padre {
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 87, 87, 0.472);
+    position: fixed;
+}
+
+.input-C-Usuario-Contenedor {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    height: 62%;
+    margin: 10% auto;
+    border-radius: 10px;
+    transition: height .3s ease;
+}
+
+.input-C-Usuario-Contenedor.active {
+    height: 66%;
+    transition: height .3s ease;
+}
+
+.btn-C-Usuario-X {
+    border: none;
+    background-color: #212529;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    height: 58%;
+}
+
+.crear-C-Inputs {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    z-index: 998;
+}
+
+.inputs-C-Sesion {
+    width: 47%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-C-Sesion label {
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.inputs-C-Sesion p {
+    margin: 0px;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.inputs-C-Sesion input {
+    font-size: 1.2rem;
+    width: 90%;
+    margin-bottom: 3%;
+    margin-top: 3.5%;
+}
+
+.crear-Cuenta-Home {
+    font-weight: 100;
+    margin: 0;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+.inputs-C-Sesion input:focus {
+    outline: none;
+}
+
+
+.crear-Usuario {
+    margin-top: 10%;
+    width: 25%;
+    font-size: 1.3rem;
+    background-color: red;
+    border: none;
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.span-Error-Crear-C {
+    margin-top: -5%;
+    color: red;
+    padding-left: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+.span-Error-Crear-C.active {
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease;
+}
+
+.cuentaCreada {
+    transform: translate(0px, -280px);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+.cuentaCreada.active {
+    transform: translate(0px, 235px);
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease;
+    z-index: 999;
+}
+
+@media(max-width:1024px) {
+    .input-C-Usuario-Contenedor {
+        width: 80%;
+    }
+
+    .input-C-Usuario-Contenedor.active {
+        height: 70%;
+    }
+
+    .inputs-C-Sesion input {
+        margin-top: 3%;
+    }
+
+
+    .crear-Usuario {
+        margin-left: 4.5%;
+        margin-top: 6%;
+    }
+}
+
+@media(max-width:768px) {
+    .input-C-Usuario-Contenedor {
+        height: 60%;
+        width: 80%;
+    }
+
+    .input-C-Usuario-Contenedor.active {
+        height: 62%;
+    }
+
+    .inputs-C-Sesion input {
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+
+
+    .span-Error-Crear-C.active {
+        padding-left: 5%;
+    }
+
+    .cuentaCreada {
+        width: 90%;
+        margin-left: 4%;
+    }
+
+    .cuentaCreada.active {
+        width: 90%;
+        margin-left: 4%;
+        transform: translate(0px, 225px);
+    }
+}
+
+@media (max-width: 425px) {
+    .input-C-Usuario-Contenedor {
+        height: 75vh;
+        margin: 5% auto;
+        width: 90%;
+        transition: all .3s ease;
+    }
+
+    .inputs-C-Sesion input {
+        font-size: 1rem;
+        width: 91%;
+        margin-top: 0;
+    }
+
+    .inputs-C-Sesion label {
+        padding-bottom: 0;
+    }
+
+    .input-Telefono {
+        padding-top: 2%;
+    }
+    .crear-C-Inputs {
+        margin-top: 5%;
+        flex-direction: column;
+        z-index: 998;
+    }
+
+    .inputs-C-Sesion {
+        width: 95%;
+        margin-left: 5%;
+        padding-top: 0;
+    }
+
+    .crear-Usuario {
+        margin-left: 8%;
+        width: 30%;
+    }
+
+    .input-C-Usuario-Contenedor.active {
+        height: 85%;
+        transition: all .3s ease;
+    }
+
+    .span-Error-Crear-C {
+        font-size: 1rem;
+        padding-left: 8%;
+        margin-top: -8%;
+        z-index: 998;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease;
+        display: block;
+    }
+
+    .span-Error-Crear-C.active {
+        font-size: 1rem;
+        padding-left: 8%;
+        margin: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease;
+        display: block;
+    }
+
+    .cuentaCreada.active {
+        width: 100%;
+        margin-left: 0;
+        transform: translate(0px, 290px);
+    }
+}
+
+@media(max-width:375px) {
+    .crear-Usuario {
+        width: 30%;
+    }
+
+    .input-C-Usuario-Contenedor.active {
+        height: 80%;
+        transition: all .3s ease;
+    }
+}
+
+@media(max-width:320px) {
+    .crear-Cuenta-Home {
+        font-weight: 100;
+        margin: 0;
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+
+    .crear-Usuario {
+        width: 35%;
+        argin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .inputs-C-Sesion input {
+        margin-top: 3%;
+    }
+
+    .input-C-Usuario-Contenedor.active {
+        height: auto;
+    }
+
+    .span-Error-Crear-C {
+        font-size: 1rem;
+        margin-top: -17%;
+    }
+
+}
