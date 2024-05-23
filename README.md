@@ -29,7 +29,7 @@ Asegúrate de tener instalados los siguientes requisitos en tu máquina:
 
 ## Configuración del Frontend (React)
 
-1. **Clonar el repositorio**
+1. ## Clonar el repositorio
 
    ```bash
    git clone https://github.com/tu-usuario/combined-projects.git
@@ -37,13 +37,13 @@ Asegúrate de tener instalados los siguientes requisitos en tu máquina:
 
    ```
 
-2. **Instalar dependencias**
+2. ## Instalar dependencias
 
    Navega al directorio front y ejecuta npm para instalar las dependencias:
    cd front
    npm install
 
-3. **Ejecutar el servidor de desarrollo**
+3. ## Ejecutar el servidor de desarrollo
 
    Después de instalar las dependencias, ejecuta el siguiente comando para iniciar el servidor de desarrollo:
    npm run start
